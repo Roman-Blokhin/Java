@@ -1,5 +1,7 @@
 // МАТЕМАТИЧЕСКИЕ ДАННЫЕ
 
+import java.util.Scanner;
+
 public class les_3 {
     public static void main(String[] args) {
         int num1 = 50, num2 = 100, res;
@@ -18,5 +20,15 @@ public class les_3 {
         System.out.println(res4);
         System.out.println(res5);
         System.out.println(res6);
+
+        System.out.println("----------------------");
+
+        // Делаем примитивный калькулятор
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите первое число: " );
+        float number1 = scan.nextInt();
+        System.out.println("Введите первое число: " );
+        float number2 = scan.nextInt();
+        System.out.println("Сумма равна: " + (number1 + number2));
     }
 }
