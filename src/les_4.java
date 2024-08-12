@@ -8,7 +8,7 @@ public class les_4 {
         System.out.print("Введите число: ");
         Scanner scan = new Scanner(System.in);
         int age = scan.nextInt();
-        if (num > age) {
+        if (num > age || age == 70) {  //  знак || значит - или, знак && значит - и
             System.out.println("Базовое число больше введенного пользователем");
         } else if (num < age) {
             System.out.println("Базовое число меньше");
