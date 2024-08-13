@@ -5,9 +5,9 @@ public class calculate {
         Scanner scan = new Scanner(System.in);
         Scanner scann = new Scanner(System.in);
         System.out.print("Введите первое число: ");
-        int num_1 = scan.nextInt();
+        float num_1 = scan.nextInt();
         System.out.print("Введите второе число: ");
-        int num_2 = scan.nextInt();
+        float num_2 = scan.nextInt();
 
         System.out.println("\n1. +");
         System.out.println("2. -");
@@ -16,7 +16,7 @@ public class calculate {
         System.out.print("Выберите действие: ");
         String word = scann.nextLine();
 
-        int res;
+        float res;
         if (word.equals("1")) {
             res = num_1 + num_2;
             System.out.println("Результат: " + res);
@@ -27,8 +27,12 @@ public class calculate {
             res = num_1 * num_2;
             System.out.println("Результат: " + res);
         } else if (word.equals("4")) {
-            res = num_1 / num_2;
-            System.out.println("Результат: " + res);
+            if (num_2 == 0) {
+                System.out.println("Error");
+            } else {
+                res = num_1 / num_2;
+                System.out.println("Результат: " + res);
+            }
         }
     }
 }
