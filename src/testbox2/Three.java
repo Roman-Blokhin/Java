@@ -3,6 +3,13 @@
 package testbox2;
 
 public class Three {
+    public static void main(String[] args) {
+        // создаем экземпляр класса
+        Two obj = new Two();// тип(класс) + название переменной + запрашиваем память для типа(класса)
+        System.out.println(obj.defaultVar);  // потому что в этом пакете
+        System.out.println(obj.protectedVar);  // потому что в этом же пакете
+        System.out.println(obj.publicVar);  // потому что публичная
+    }
 }
 
 
