@@ -9,13 +9,11 @@ public class Main {
         person_1.age = 32;  // изменение возраста персонажа
 
         System.out.println(person_1.getName());  // получаем и выводим имя из приватной переменной
-
         person_1.setName("Daria");  // устанавливаем новое имя через метод сеттер
-
         System.out.println("Персонаж изменен: " + person_1.getName() + ". Возраст: " + person_1.age);
 
-
-
+        System.out.println();
+        person_1.firstNameAndSecondName("Box", "Vita");  // используем метод, передаем 2 параметра
 
     }
 }

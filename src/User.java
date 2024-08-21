@@ -20,4 +20,9 @@ public class User {
     public void setName(String name) {  // устанавливает новое значение имени
         this.name = name;
     }
+
+    public void firstNameAndSecondName(String name, String surName) {  // создали метод, получающий параметры
+        System.out.println("Ваше имя: " + name);
+        System.out.println("Ваша фамилия: " + surName);
+    }
 }
