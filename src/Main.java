@@ -26,5 +26,8 @@ public class Main {
         user_1.setInfo("root");  // меняем значение на новое
         System.out.println(user_1.getInfo());
 
+        System.out.println("--------------------------------");
+
+        
     }
 }
