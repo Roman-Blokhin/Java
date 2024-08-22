@@ -15,5 +15,16 @@ public class Main {
         System.out.println();
         person_1.firstNameAndSecondName("Box", "Vita");  // используем метод, передаем 2 параметра
 
+        System.out.println("--------------------------------");
+
+        Test user_1 = new Test();  // создаем экземпляр класса Test
+        System.out.println(user_1.getInfo());
+        user_1.setInfo("cat");  // присваиваем новое значение через сеттер, потому что переменная приватная
+        user_1.num = 5;  // присваиваем значение открыто
+        System.out.println(user_1.getInfo());
+        System.out.println(user_1.num);
+        user_1.setInfo("root");  // меняем значение на новое
+        System.out.println(user_1.getInfo());
+
     }
 }
