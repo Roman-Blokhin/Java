@@ -28,6 +28,10 @@ public class Main {
 
         System.out.println("--------------------------------");
 
-        
+        User user_2 = new User(7, "toy");
+        User user_3 = new User(70, "yuo");
+
+        System.out.println(user_2.count);  // функция count считает все созданные экземпляры, из-за ефешс
+        System.out.println(user_3.count);
     }
 }

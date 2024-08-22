@@ -6,10 +6,13 @@ public class User {
     private String name;  // 1. делаем нашу переменную приватной, работает только внутри этого класса
     int age;
 
+    public static int count = 0;  // ключевое слово static говорит, что эта переменная доступна всем экземплярам
+
 
     public User(int age, String name) {
         this.age = age;
         this.name = name;
+        count++;
     }
 
     // 2. создаем геттер и сеттер, чтобы приватная переменная могла использоваться и изменяться в других классах
