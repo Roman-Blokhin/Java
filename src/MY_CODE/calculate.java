@@ -1,4 +1,5 @@
-import javax.sound.midi.Soundbank;
+package MY_CODE;
+
 import java.util.Scanner;
 
 public class calculate {

@@ -1,3 +1,5 @@
+package MY_CODE;
+
 import java.util.Scanner;
 
 public class note {
