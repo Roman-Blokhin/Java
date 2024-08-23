@@ -1,4 +1,4 @@
-// Работа с исключениями
+// Работа с исключениями - проверяемые
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -16,6 +16,12 @@ public class Les_22 {
         } finally {  // блок finally выполняется всегда, если сработало исключение, и если нет
             System.out.println("finally выполняется всегда, если сработало исключение, и если нет");
         }
+    }
+
+    public void master() throws FileNotFoundException {  // второй способ обработки исключений
+
+        File file_2 = new File("text.txt");
+        Scanner scan = new Scanner(file_2);  // файла нет, но обрабатывается исключение - throws FileNotFoundException
 
     }
 }
