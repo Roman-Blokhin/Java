@@ -11,7 +11,10 @@ public class Les_22 {
         try {
             Scanner scan = new Scanner(file);  // при возникн. несуществующей операции, делаем исключение- кр. лампочка
         } catch (FileNotFoundException e) {
+            System.out.println(e.getMessage());
             System.out.println("Такого файла нет");
+        } finally {  // блок finally выполняется всегда, если сработало исключение, и если нет
+            System.out.println("finally выполняется всегда, если сработало исключение, и если нет");
         }
 
     }
